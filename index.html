@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.7/dayjs.min.js" integrity="sha512-kZ+x2gdehn6OZMWZSp3Vt5R+v9hQTYEATQwaUfWquhxbvNVAy6IRtYs7asdyxKUTqG0I5ZqBqnzcBrpnHJCAGw==" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -13,10 +13,54 @@
   </head>
   <body>
     <div id="root">
-      
+      <header>
+        <div class="header_top">
+          <ul class="phone_list">
+            <li v-for="agencyNumber in agencyPhoneNumbers "><a href="#">
+            {{agencyNumber}}
+            </a></li>
+          </ul>
+
+          <ul class="social_icons">
+            <li v-for="socialIcon in socialIcons "><i :class="socialIcon"></i></li>
+          </ul>
+        </div>
+
+        <div class="header_bottom">
+          <img :src="agencyLogo" alt="logo">
+          <nav class="header_nav">
+            <ul class="nav_list">
+              <li v-for="link in navbarLinks"><a href="#">{{link}}</a></li>
+            </ul>
+
+          </nav>
+          <div class="btn_and_search_container">
+            <a class="my_btn" href="">PURCHASE</a>
+            <i><i class="fas fa-search"></i></i>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="slider">
+          <div class="content_slider">
+            <h4></h4>
+            <h1></h1>
+            <p></p>
+            <a href="" class="my_btn">READ MORE</a>
+            <ul class="slider_social_list">
+              <li v-for="socialLink in socialLinks"><a href="#">{{socialLink}} <span>-</span></a></li>
+            </ul>
+          </div>
+
+          <div class="images_slider">
+
+          </div>
+        </section>
+      </main>
     </div>
 
 
-  <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
   </body>
 </html>
