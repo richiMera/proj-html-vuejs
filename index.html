@@ -13,7 +13,9 @@
   </head>
   <body>
     <div id="root">
+      <!-- HEADER -->
       <header>
+        <!-- HEADER-TOP -->
         <div class="header_top">
           <ul class="phone_list">
             <li v-for="agencyNumber in agencyPhoneNumbers "><a href="#">
@@ -25,7 +27,7 @@
             <li v-for="socialIcon in socialIcons "><i :class="socialIcon"></i></li>
           </ul>
         </div>
-
+        <!-- HEADER-BOTTOM-NAVBAR -->
         <div class="header_bottom">
           <img :src="agencyLogo" alt="logo">
           <nav class="header_nav">
@@ -40,15 +42,16 @@
           </div>
         </div>
       </header>
-
+      <!-- MAIN-CONTENT -->
       <main>
+        <!-- FIRST-MAIN-PAGE-SLIDER -->
         <section class="slider">
           <div class="content_slider">
             <h4>{{slider[indexImages].preTitle}}</h4>
             <h1 v-html="slider[indexImages].title"></h1>
             <div class="design_line"><span></span></div>
             <p>{{slider[indexImages].paragraph}}</p>
-            <a href="" class="my_btn">READ MORE</a>
+            <a href="" class="my_btn_black">READ MORE</a>
             <ul class="slider_social_list">
               <li v-for="socialLink in socialLinks"><a href="#">{{socialLink}} <span>-</span></a></li>
             </ul>
@@ -57,7 +60,45 @@
             </ul>
             <img :src="sliderImages[indexImages]" alt="">
           </div>
+        </section>
 
+        <!-- SECOND-MAIN-PAGE -->
+        <section class="why_we_are_here">
+          <div class="why_slogan_box">
+            <h2 v-html="secondMainPageSlogan"></h2>
+            <div class="design_line"><span></span></div>
+            <a href="" class="my_btn">VIEW ALL</a>
+          </div>
+
+          <div class="why_schede_box">
+            <div v-for="scheda in schede" class="scheda">
+              <i :class="scheda.icon"></i>
+              <h4>{{scheda.title}}</h4>
+              <p>{{scheda.content}}</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- THIRD-MAIN-PAGE -->
+        <section class="learn_more">
+          <div class="learn_image_box">
+            <div class="background_image">
+              <div class="background_image_layover"></div>
+              <img src="img/busy-architect-PYVKWM4-1024x872.jpg" alt="">
+              <div class="top_image_box">
+                <div class="top_half_image">
+                  <img src="img/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
+                </div>
+                <div class="bottom_half_image">
+                  <img src="img/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="learn_content_box">
+
+          </div>
         </section>
       </main>
     </div>

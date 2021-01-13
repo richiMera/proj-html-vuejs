@@ -13,6 +13,9 @@
      background: linear-gradient(to right, rgba(0, 0, 0, 0.6), black);
    }
  }
+ .my_btn_black {
+   @include myBtnBlack;
+ }
 
  .design_line {
    position: relative;

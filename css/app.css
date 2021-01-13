@@ -19,10 +19,24 @@ body {
   text-decoration: none;
   color: white;
   box-shadow: 2px 2px 10px 10px #D4F9F0;
-  transition: 0.5s;
+  transition: all 2s;
 }
 .my_btn:hover {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), black);
+}
+
+.my_btn_black {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  border-radius: 55px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), black);
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 2px 2px 10px 10px #D4F9F0;
+  transition: all 2s;
 }
 
 .design_line {
@@ -122,7 +136,7 @@ body {
 .slider {
   position: relative;
   width: 100%;
-  height: 900px;
+  height: 950px;
   background-color: #F9F9F9;
   overflow: hidden;
 }
@@ -137,8 +151,8 @@ body {
   color: #00D9A6;
 }
 .slider .content_slider h1 {
-  font-size: 50px;
-  margin-top: 40px;
+  font-size: 60px;
+  margin-top: 25px;
   margin-bottom: 50px;
 }
 .slider .content_slider h1 span {
@@ -163,6 +177,10 @@ body {
   font-weight: 700;
 }
 .slider .content_slider .chooser_list {
+  position: absolute;
+  left: 43%;
+  top: 60%;
+  transform: translate(-43%);
   display: flex;
   align-items: center;
   width: 190px;
@@ -173,6 +191,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 5px;
+  z-index: 2;
 }
 .slider .content_slider .chooser_list li {
   display: flex;
@@ -189,4 +208,138 @@ body {
   top: -5%;
   right: -17%;
   width: 80%;
+}
+
+.why_we_are_here {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1150px;
+  background-color: white;
+}
+.why_we_are_here .why_slogan_box {
+  width: 40%;
+  height: 30%;
+  background-color: white;
+  padding-left: 10px;
+}
+.why_we_are_here .why_slogan_box h2 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.why_we_are_here .why_slogan_box h2 span {
+  color: #00D9A6;
+}
+.why_we_are_here .why_slogan_box div {
+  margin-bottom: 60px;
+}
+.why_we_are_here .why_schede_box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 50%;
+}
+.why_we_are_here .why_schede_box .scheda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 425px;
+  height: 325px;
+  border: 1px solid rgba(222, 222, 222, 0.4);
+  border-radius: 10px;
+  margin: 15px;
+  padding: 0 50px;
+  box-shadow: 2px 2px 20px 20px #F9F9F9;
+  color: #393939;
+  cursor: inherit;
+}
+.why_we_are_here .why_schede_box .scheda i {
+  font-size: 60px;
+}
+.why_we_are_here .why_schede_box .scheda h4 {
+  font-size: 30px;
+  margin: 50px 0 30px 0;
+}
+.why_we_are_here .why_schede_box .scheda p {
+  font-size: 18px;
+}
+.why_we_are_here .why_schede_box .scheda:hover {
+  color: white;
+  background-image: linear-gradient(to left, rgba(124, 252, 0, 0.6), #00D9A6);
+}
+
+.learn_more {
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  background-color: #F9F9F9;
+}
+.learn_more .learn_image_box {
+  width: 50%;
+  height: 100%;
+  background-color: #F9F9F9;
+}
+.learn_more .learn_image_box .background_image {
+  position: relative;
+  width: 610px;
+  height: 550px;
+  border-radius: 0 40px 0 0;
+}
+.learn_more .learn_image_box .background_image img {
+  position: relative;
+  left: -40px;
+  width: 100%;
+  height: 100%;
+}
+.learn_more .learn_image_box .background_image .background_image_layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(124, 252, 0, 0.5), rgba(124, 252, 0, 0.5) 30%, rgba(0, 217, 166, 0.8));
+  border-radius: 0 40px 0 0;
+  z-index: 2;
+}
+.learn_more .learn_image_box .background_image .top_image_box {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  width: 610px;
+  height: 550px;
+  z-index: 3;
+}
+.learn_more .learn_image_box .background_image .top_image_box .top_half_image {
+  position: relative;
+  left: 30px;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 30px 30px 0 0;
+}
+.learn_more .learn_image_box .background_image .top_image_box .top_half_image img {
+  position: absolute;
+  top: -20px;
+  width: 650px;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.learn_more .learn_image_box .background_image .top_image_box .bottom_half_image {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 0 0 30px 30px;
+}
+.learn_more .learn_image_box .background_image .top_image_box .bottom_half_image img {
+  position: absolute;
+  top: -285px;
+  width: 650px;
+  height: 550px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
