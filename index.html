@@ -30,7 +30,7 @@
           <img :src="agencyLogo" alt="logo">
           <nav class="header_nav">
             <ul class="nav_list">
-              <li v-for="link in navbarLinks"><a href="#">{{link}}</a></li>
+              <li @click="activeLinks(index)" :class="(index == indexLinks) ? 'active_link': ''" v-for="(link, index) in navbarLinks"><a href="#">{{link}}</a></li>
             </ul>
 
           </nav>
@@ -44,18 +44,20 @@
       <main>
         <section class="slider">
           <div class="content_slider">
-            <h4></h4>
-            <h1></h1>
-            <p></p>
+            <h4>{{slider[indexImages].preTitle}}</h4>
+            <h1 v-html="slider[indexImages].title"></h1>
+            <div class="design_line"><span></span></div>
+            <p>{{slider[indexImages].paragraph}}</p>
             <a href="" class="my_btn">READ MORE</a>
             <ul class="slider_social_list">
               <li v-for="socialLink in socialLinks"><a href="#">{{socialLink}} <span>-</span></a></li>
             </ul>
+            <ul class="chooser_list">
+              <li :class="(index == indexImages) ? 'active_image': ''" @click="chooseImage(index)" v-for="(chooseImageNumber, index) in chooseImageNumbers">{{chooseImageNumber}}</li>
+            </ul>
+            <img :src="sliderImages[indexImages]" alt="">
           </div>
 
-          <div class="images_slider">
-
-          </div>
         </section>
       </main>
     </div>

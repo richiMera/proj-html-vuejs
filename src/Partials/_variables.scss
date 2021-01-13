@@ -1,5 +1,6 @@
 $colorWhite: white;
 $colorGreen: #00D9A6;
+$colorLightGray: #F9F9F9;
 @mixin headerTopLinks {
   color: $colorWhite;
   font-size: 16px;
@@ -19,4 +20,5 @@ $colorGreen: #00D9A6;
   text-decoration: none;
   color: white;
   box-shadow: 2px 2px 10px 10px #D4F9F0;
+  transition: 0.5s;
 }

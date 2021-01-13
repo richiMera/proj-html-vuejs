@@ -5,9 +5,36 @@
 }
  body {
    font-family: 'Lato', sans-serif;
-   height: 1200px;
  }
 
  .my_btn {
    @include myBtn;
+   &:hover {
+     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), black);
+   }
  }
+
+ .design_line {
+   position: relative;
+   width: 70px;
+   height: 5px;
+   background: linear-gradient(to right, rgb(124,252,0,0.6), $colorGreen);
+   span {
+     position: absolute;
+     top: 0;
+     left: 10%;
+     width: 7px;
+     height: 7px;
+     background-color: $colorLightGray;
+     z-index: 2;
+   }
+ }
+
+.active_link {
+  color: black;
+  font-weight: 700;
+}
+.active_image {
+  background: linear-gradient(to right, rgb(124,252,0,0.6), $colorGreen);
+  font-weight: 700;
+}
