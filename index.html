@@ -145,7 +145,18 @@
 
         <!-- SIXTH-MAIN-PAGE -->
         <section class="our_blog">
-          
+          <h2 v-html="sixthPageContent.slogan"></h2>
+          <div class="design_line"><span></span></div>
+          <div class="blog_cards_container">
+            <div v-for="card in sixthPageContent.cards" class="blog_image_card_box">
+              <img :src="card.cardImage" alt="">
+              <div class="blog_info_box">
+                <p>{{card.projectYears}}<span>by</span>{{card.projectAuthor}}</p>
+                <h4>{{card.projectName}}</h5>
+              </div>
+            </div>
+          </div>
+          <a href="" class="my_btn_black">VIEW ALL POST</a>
         </section>
       </main>
     </div>

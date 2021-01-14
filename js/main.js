@@ -195,9 +195,38 @@ var app = new Vue ({
         avatarImage: "img/businesswoman-analysing-document-P8WSNMC-1024x820.jpg",
         avatarName: "LISSA DURBIN",
         avatarRole: "Client"
-      }
+      },
 
     // MAIN-FIFTH-PAGE
+
+    //MAIN-SIXTH-PAGE
+    sixthPageContent: {
+      slogan: "Latest News & Our <span>Blog</span>",
+      cards: [
+        {
+          cardImage: "img/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg",
+          projectYears: "May 24, 2018",
+          projectAuthor: "Alex",
+          projectName: "Marketing Ideas",
+          cardLink: "https://demo.phlox.pro/business-2/2018/05/24/post-01/",
+        },
+        {
+          cardImage: "img/Businessman-at-the-desk-in-his-office-resting--1024x768.jpg",
+          projectYears: "May 24, 2018",
+          projectAuthor: "Alex",
+          projectName: "Rest During Working Hours",
+          cardLink: "https://demo.phlox.pro/business-2/2018/05/24/post-02/",
+        },
+        {
+          cardImage: "img/simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg",
+          projectYears: "May 24, 2018",
+          projectAuthor: "Alex",
+          projectName: "Develop Your Startup Idea",
+          cardLink: "https://demo.phlox.pro/business-2/2018/05/24/post-03/",
+        }
+      ]
+    }
+    //MAIN-SIXTH-PAGE
 
 
   },
