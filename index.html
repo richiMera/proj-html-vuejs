@@ -97,8 +97,55 @@
           </div>
 
           <div class="learn_content_box">
-
+            <h3 v-html="thirdPageContent.slogan"></h3>
+            <div class="design_line"><span></span></div>
+            <p>{{thirdPageContent.paragraph}}</p>
+            <a class="my_btn" href="#">READ MORE</a>
           </div>
+        </section>
+
+        <!-- FOURTH-MAIN-PAGE -->
+        <section class="recent_project">
+          <div class="recent_project_content_container">
+            <div class="recent_project_content_slogan">
+              <div class="design_line"><span></span></div>
+              <h2 v-html="fourthPageContent.slogan"></h2>
+              <div class="design_line margin_left_10"><span></span></div>
+            </div>
+            <div class="recent_project_content_paragraph">
+              <p>{{fourthPageContent.paragraph}}</p>
+            </div>
+          </div>
+
+          <div class="project_images_list_container">
+            <div v-for="image in fourthPageImages" class="progect_image_box">
+              <img :src="image.image" alt="">
+              <div class="hover_layout">
+                <div class="argument_container">
+                  <a class="project_title" :href="image.imageLink">{{image.title}}</a>
+                  <a class="project_argument" v-for="topic in image.arguments" :href="topic.argumentLink">{{topic.argument}}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="my_btn" href="#">READ MORE</a>
+        </section>
+
+        <!-- FIFTH-MAIN-PAGE -->
+        <section class="smoked_bacon">
+          <img class="background_image" :src="fifthPageContent.backgroundImage" alt="">
+          <div class="smoked_bacon_hoverlay">
+            <i :class="fifthPageContent.icon"></i>
+            <h2>{{fifthPageContent.mantra}}</h2>
+            <img :src="fifthPageContent.avatarImage" alt="">
+            <h4>{{fifthPageContent.avatarName}}</h4>
+            <p>{{fifthPageContent.avatarRole}}</p>
+          </div>
+        </section>
+
+        <!-- SIXTH-MAIN-PAGE -->
+        <section class="our_blog">
+          
         </section>
       </main>
     </div>

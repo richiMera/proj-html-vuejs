@@ -14,7 +14,7 @@ body {
   line-height: 50px;
   display: inline-block;
   border-radius: 55px;
-  background: linear-gradient(to right, rgba(124, 252, 0, 0.6), #00D9A6);
+  background: linear-gradient(to right, rgba(155, 225, 93, 0.6), #00D9A6);
   text-align: center;
   text-decoration: none;
   color: white;
@@ -271,8 +271,10 @@ body {
 
 .learn_more {
   display: flex;
+  align-items: center;
   width: 100%;
-  height: 1000px;
+  height: 1100px;
+  padding-top: 200px;
   background-color: #F9F9F9;
 }
 .learn_more .learn_image_box {
@@ -298,7 +300,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to top, rgba(124, 252, 0, 0.5), rgba(124, 252, 0, 0.5) 30%, rgba(0, 217, 166, 0.8));
+  background-image: linear-gradient(to top, rgba(155, 225, 93, 0.8) 30%, #00D9A6 120%);
   border-radius: 0 40px 0 0;
   z-index: 2;
 }
@@ -342,4 +344,173 @@ body {
      object-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.learn_more .learn_content_box {
+  width: 50%;
+  height: 100%;
+  background-color: #F9F9F9;
+  padding: 120px 120px 0 100px;
+}
+.learn_more .learn_content_box h3 {
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+.learn_more .learn_content_box h3 span {
+  color: #00D9A6;
+}
+.learn_more .learn_content_box p {
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.recent_project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 1745px;
+}
+.recent_project .recent_project_content_container {
+  display: flex;
+  width: 100%;
+  height: 590px;
+}
+.recent_project .recent_project_content_container .recent_project_content_slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+  padding-left: 7.5px;
+}
+.recent_project .recent_project_content_container .recent_project_content_slogan h2 {
+  font-size: 60px;
+  margin: 50px 0 40px 10px;
+}
+.recent_project .recent_project_content_container .recent_project_content_slogan h2 span {
+  color: #00D9A6;
+}
+.recent_project .recent_project_content_container .recent_project_content_slogan .margin_left_10 {
+  margin-left: 10px;
+}
+.recent_project .recent_project_content_container .recent_project_content_paragraph {
+  display: flex;
+  align-items: flex-end;
+  width: 50%;
+  height: 100%;
+}
+.recent_project .project_images_list_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 750px;
+  padding: 0 10px;
+  margin-top: 80px;
+  margin-bottom: 125px;
+}
+.recent_project .project_images_list_container .progect_image_box {
+  position: relative;
+  width: calc((100% / 4) - 5px);
+  border-radius: 5px;
+  margin: 2.5px;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+.recent_project .project_images_list_container .progect_image_box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.recent_project .project_images_list_container .progect_image_box .hover_layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(155, 225, 93, 0.6), #00D9A6);
+  display: none;
+  transition: 2s ease-in-out;
+  padding-left: 40px;
+}
+.recent_project .project_images_list_container .progect_image_box .hover_layout .argument_container {
+  position: absolute;
+  bottom: 50px;
+}
+.recent_project .project_images_list_container .progect_image_box .hover_layout .argument_container a {
+  text-decoration: none;
+  color: white;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.recent_project .project_images_list_container .progect_image_box .hover_layout .argument_container .project_title {
+  font-size: 25px;
+  font-weight: 700;
+  display: block;
+}
+.recent_project .project_images_list_container .progect_image_box .hover_layout .argument_container .project_argument {
+  margin-right: 20px;
+}
+.recent_project .project_images_list_container .progect_image_box:hover .hover_layout {
+  display: block;
+}
+.recent_project .project_images_list_container .progect_image_box:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.smoked_bacon {
+  position: relative;
+  width: 100%;
+  height: 820px;
+}
+.smoked_bacon .background_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.smoked_bacon .smoked_bacon_hoverlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 44, 43, 0.9);
+  padding-top: 175px;
+}
+.smoked_bacon .smoked_bacon_hoverlay i {
+  font-size: 45px;
+  color: #00D9A6;
+  margin-bottom: 65px;
+}
+.smoked_bacon .smoked_bacon_hoverlay h2 {
+  width: 50%;
+  font-size: 27px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 90px;
+}
+.smoked_bacon .smoked_bacon_hoverlay img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 35px;
+}
+.smoked_bacon .smoked_bacon_hoverlay h4 {
+  color: #00D9A6;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.smoked_bacon .smoked_bacon_hoverlay p {
+  color: white;
+  font-size: 18px;
 }

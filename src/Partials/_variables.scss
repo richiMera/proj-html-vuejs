@@ -1,6 +1,7 @@
 $colorWhite: white;
 $colorGreen: #00D9A6;
 $colorLightGray: #F9F9F9;
+$linearGradientGreen: linear-gradient(to right, rgb(155,225,93,0.6), $colorGreen);
 @mixin headerTopLinks {
   color: $colorWhite;
   font-size: 16px;
@@ -15,7 +16,7 @@ $colorLightGray: #F9F9F9;
   line-height: 50px;
   display: inline-block;
   border-radius: 55px;
-  background: linear-gradient(to right, rgb(124,252,0,0.6), $colorGreen);
+  background: $linearGradientGreen;
   text-align: center;
   text-decoration: none;
   color: white;
