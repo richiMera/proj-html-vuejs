@@ -399,6 +399,7 @@ header {
   height: 550px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 30px 30px 0 0;
 }
 .learn_more .learn_image_box .background_image .top_image_box .bottom_half_image {
   position: relative;
@@ -416,6 +417,7 @@ header {
      object-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0 0 30px 30px;
 }
 .learn_more .learn_content_box {
   width: 50%;

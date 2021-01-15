@@ -181,6 +181,7 @@
         width: 610px;
         height: 550px;
         z-index: 3;
+        // box-shadow: 0 0 45px 0 rgba(0,0,0,.16);
         .top_half_image {
           position: relative;
           left: 30px;
@@ -194,6 +195,7 @@
             width: 650px;
             height: 550px;
             object-fit: cover;
+            border-radius: 30px 30px 0 0;
           }
         }
         .bottom_half_image {
@@ -209,6 +211,7 @@
             height: 550px;
             object-position: center;
             object-fit: cover;
+            border-radius: 0 0 30px 30px;
           }
         }
       }
