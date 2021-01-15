@@ -149,14 +149,42 @@
           <div class="design_line"><span></span></div>
           <div class="blog_cards_container">
             <div v-for="card in sixthPageContent.cards" class="blog_image_card_box">
-              <img :src="card.cardImage" alt="">
-              <div class="blog_info_box">
-                <p>{{card.projectYears}}<span>by</span>{{card.projectAuthor}}</p>
-                <h4>{{card.projectName}}</h5>
-              </div>
+              <a :href="card.cardLink">
+                <img :src="card.cardImage" alt="">
+                <div class="blog_info_box">
+                  <p>{{card.projectYears}}<span>by</span>{{card.projectAuthor}}</p>
+                  <h4>{{card.projectName}}</h5>
+                </div>
+              </a>
             </div>
           </div>
           <a href="" class="my_btn_black">VIEW ALL POST</a>
+        </section>
+
+        <!-- SEVENTH-MAIN-PAGE -->
+        <section class="last_main_container">
+          <div class="black_green_container">
+            <div class="black_box last_box">
+              <p>Are You Ready?</p>
+              <h3>Start a New Project</h3>
+              <div class="input_box">
+                <input class="mail_input" type="text" name="" value="" placeholder="Enter Your Email Address">
+                <input class="submit" type="submit" name="" value="SUBMIT">
+              </div>
+            </div>
+            <div class="green_box last_box">
+              <p>What Are You Waiting for?</p>
+              <h3>Let's Talk About Work</h3>
+              <a href="" class="my_btn_black">START NOW</a>
+            </div>
+          </div>
+          <div class="sponsor_list_container">
+            <ul class="sponsor_list">
+              <li v-for="sponsor in sponsors">
+                <img :src="sponsor.logo" alt="">
+              </li>
+            </ul>
+          </div>
         </section>
       </main>
     </div>

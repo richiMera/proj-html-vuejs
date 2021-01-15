@@ -225,8 +225,42 @@ var app = new Vue ({
           cardLink: "https://demo.phlox.pro/business-2/2018/05/24/post-03/",
         }
       ]
-    }
+    },
     //MAIN-SIXTH-PAGE
+    // MAIN-SEVENTH-PAGE
+    sponsors: [
+      {
+        sponsorName:"Avangarde",
+        logo:"img/client-1-2x.png",
+        sponsorLink: ""
+      },
+      {
+        sponsorName:"Fastlane",
+        logo:"img/client-9-2x.png",
+        sponsorLink: ""
+      },
+      {
+        sponsorName:"Ron Jones",
+        logo:"img/client-7-2x.png",
+        sponsorLink: ""
+      },
+      {
+        sponsorName:"Chippy's",
+        logo:"img/client-3-2x.png",
+        sponsorLink: ""
+      },
+      {
+        sponsorName:"Bullseye",
+        logo:"img/client-4-2x.png",
+        sponsorLink: ""
+      },
+      {
+        sponsorName:"Mighty Fornitures",
+        logo:"img/client-5-2x.png",
+        sponsorLink: ""
+      },
+    ]
+    // MAIN-SEVENTH-PAGE
 
 
   },

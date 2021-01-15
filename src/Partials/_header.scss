@@ -1,5 +1,13 @@
 
 // $colorWhite: white;
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 4px 0 rgba(34,34,34,.03);
+}
 .header_top {
   display: flex;
   justify-content: space-between;
@@ -38,6 +46,8 @@
   background-color: $colorWhite;
   padding-left: 40px;
   padding-right: 30px;
+  border-bottom: 1px solid #dedede;
+  box-shadow: 0 4px 44px 0 rgba(0,0,0,.14);
   img {
     width: 200px;
   }
