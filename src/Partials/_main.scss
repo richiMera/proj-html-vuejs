@@ -230,6 +230,9 @@
       margin-top: 35px;
       margin-bottom: 40px;
     }
+    a {
+      width: 160px;
+    }
   }
 }
 
@@ -326,6 +329,9 @@
         z-index: 2;
       }
     }
+  }
+  .my_btn {
+    width: 160px;
   }
 }
 
@@ -477,9 +483,9 @@
     }
   }
   a {
-    width: 180px;
-    font-size: 14px;
+    width: 190px;
   }
+
 }
 
 .last_main_container {

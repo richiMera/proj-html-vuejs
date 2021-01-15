@@ -11,6 +11,7 @@ $linearGradientGreen: linear-gradient(to right, rgb(155,225,93,0.6), $colorGreen
 }
 
 @mixin myBtn {
+  position: relative;
   width: 150px;
   height: 50px;
   line-height: 50px;
@@ -21,9 +22,10 @@ $linearGradientGreen: linear-gradient(to right, rgb(155,225,93,0.6), $colorGreen
   text-decoration: none;
   color: white;
   box-shadow: 6px 6px 25px 0 rgba(0,217,166,.65);
-  transition: all 2s;
+  overflow: hidden;
 }
 @mixin myBtnBlack {
+  position: relative;
   width: 150px;
   height: 50px;
   line-height: 50px;
@@ -34,5 +36,5 @@ $linearGradientGreen: linear-gradient(to right, rgb(155,225,93,0.6), $colorGreen
   text-decoration: none;
   color: white;
   box-shadow: 6px 6px 25px 0 rgba(0,0,0,.35);
-  transition: all 2s;
+  overflow: hidden;
 }

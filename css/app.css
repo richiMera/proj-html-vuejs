@@ -10,6 +10,7 @@ body {
 }
 
 .my_btn {
+  position: relative;
   width: 150px;
   height: 50px;
   line-height: 50px;
@@ -20,13 +21,23 @@ body {
   text-decoration: none;
   color: white;
   box-shadow: 6px 6px 25px 0 rgba(0, 217, 166, 0.65);
-  transition: all 2s;
+  overflow: hidden;
 }
-.my_btn:hover {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), black);
+.my_btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  font-size: 13px;
+}
+.my_btn:hover .layover_btn_black {
+  width: 300px;
+  height: 300px;
 }
 
 .my_btn_black {
+  position: relative;
   width: 150px;
   height: 50px;
   line-height: 50px;
@@ -37,7 +48,43 @@ body {
   text-decoration: none;
   color: white;
   box-shadow: 6px 6px 25px 0 rgba(0, 0, 0, 0.35);
-  transition: all 2s;
+  overflow: hidden;
+}
+.my_btn_black span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  font-size: 13px;
+}
+.my_btn_black:hover .layover_btn_green {
+  width: 300px;
+  height: 300px;
+}
+
+.layover_btn_black {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-image: linear-gradient(271deg, #0c0c0c 0%, #474747 100%);
+  transition: 0.45s cubic-bezier(0.75, 0.1, 0.25, 0.9);
+}
+
+.layover_btn_green {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, rgba(155, 225, 93, 0.6), #00D9A6);
+  transition: 0.45s cubic-bezier(0.75, 0.1, 0.25, 0.9);
 }
 
 .design_line {
@@ -383,6 +430,9 @@ header {
   margin-top: 35px;
   margin-bottom: 40px;
 }
+.learn_more .learn_content_box a {
+  width: 160px;
+}
 
 .recent_project {
   display: flex;
@@ -478,6 +528,9 @@ header {
 .recent_project .project_images_list_container .progect_image_box:hover {
   transform: scale(1.1);
   z-index: 2;
+}
+.recent_project .my_btn {
+  width: 160px;
 }
 
 .smoked_bacon {
@@ -625,8 +678,7 @@ header {
   margin-right: 30px;
 }
 .our_blog a {
-  width: 180px;
-  font-size: 14px;
+  width: 190px;
 }
 
 .last_main_container {
