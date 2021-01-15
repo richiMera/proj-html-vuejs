@@ -24,8 +24,11 @@
       margin: 0 0 3px;
       line-height: 1.5em;
       cursor: pointer;
-      &:hover {
-        color: $colorGreen;
+      a {
+        text-decoration: none;
+        &:hover {
+          color: $colorGreen;
+        }
       }
     }
   }
@@ -40,7 +43,7 @@
       height: 210px;
     }
   }
-  li,p {
+  li,p,a {
     color: #444;
     font-size: 16px;
   }

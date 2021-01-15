@@ -198,7 +198,7 @@
             <h2>QUICK LINKS</h2>
             <div class="design_line"><span></span></div>
             <ul>
-              <li v-for="link in footerInformations.footerLinks">{{link.info}}</li>
+              <li v-for="link in footerInformations.footerLinks"><a :href="link.infoLink">{{link.info}}</a></li>
             </ul>
           </div>
           <div class="contacts_box footer_box">

@@ -45,6 +45,7 @@ body {
   width: 70px;
   height: 5px;
   background: linear-gradient(to right, rgba(124, 252, 0, 0.6), #00D9A6);
+  border-radius: 5px;
 }
 .design_line span {
   position: absolute;
@@ -733,7 +734,10 @@ header {
   line-height: 1.5em;
   cursor: pointer;
 }
-.footer_top .quick_links_box li:hover {
+.footer_top .quick_links_box li a {
+  text-decoration: none;
+}
+.footer_top .quick_links_box li a:hover {
   color: #00D9A6;
 }
 .footer_top .contacts_box li {
@@ -743,7 +747,7 @@ header {
   width: 100%;
   height: 210px;
 }
-.footer_top li, .footer_top p {
+.footer_top li, .footer_top p, .footer_top a {
   color: #444;
   font-size: 16px;
 }
