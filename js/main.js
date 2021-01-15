@@ -3,9 +3,54 @@ var app = new Vue ({
   data: {
     // HEADER
     agencyPhoneNumbers: ["(001) 88451234", "88455438"],
-    socialIcons: ["fab fa-facebook-f", "fab fa-twitter", "fab fa-pinterest-p"],
-    agencyLogo: "img/cropped-Group-39-2x.png",
-    navbarLinks: ["HOME", "ABOUT", "SERVICES", "SHOWCASE", "BLOG", "CONTACT"],
+    socialIcons: [
+      {
+        social: "facebook",
+        icon: "fab fa-facebook-f",
+        socialLink: ""
+      },
+      {
+        social: "twitter",
+        icon: "fab fa-twitter",
+        socialLink: ""
+      },
+      {
+        social: "pinterest",
+        icon: "fab fa-pinterest-p",
+        socialLink: ""
+      }
+    ],
+    agencyLogo: {
+      logo: "img/cropped-Group-39-2x.png",
+      logoLink: "https://demo.phlox.pro/business-2/"
+    },
+    navbarLinks: [
+      {
+        page: "HOME",
+        navLink: "https://demo.phlox.pro/business-2/"
+      },
+      {
+        page: "ABOUT",
+        navLink: "https://demo.phlox.pro/business-2/about/"
+      },
+      {
+        page: "SERVICES",
+        navLink: "https://demo.phlox.pro/business-2/services/"
+      },
+      {
+        page: "SHOWCASE",
+        navLink: "https://demo.phlox.pro/business-2/showcase/"
+      },
+      {
+        page: "BLOG",
+        navLink: "https://demo.phlox.pro/business-2/blog/"
+      },
+      {
+        page: "CONTACT",
+        navLink: "https://demo.phlox.pro/business-2/contact-page/"
+      }
+  ],
+    copyright: " 2020 PHLOX BUSINESS THEME.",
     // HEADER
     // MAIN
     // MAIN-FIRST-PAGE
@@ -259,8 +304,49 @@ var app = new Vue ({
         logo:"img/client-5-2x.png",
         sponsorLink: ""
       },
-    ]
+    ],
     // MAIN-SEVENTH-PAGE
+
+    // FOOTER__________________________________
+    // FOOTER_TOP
+    footerInformations: {
+      footerLogo: "img/cropped-Group-39-2x.png",
+      footerSlogan: "While the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.While the lovely valley teems with vapour around me.",
+      footerLinks: [
+        {
+          info: "Careers",
+          infoLink: "https://demo.phlox.pro/business-2/#"
+        },
+        {
+          info: "News",
+          infoLink: "https://demo.phlox.pro/business-2/#"
+        },
+        {
+          info: "Terms of use",
+          infoLink: "https://demo.phlox.pro/business-2/#"
+        },
+        {
+          info: "Privacy Projects",
+          infoLink: "https://demo.phlox.pro/business-2/#"
+        },
+        {
+          info: "About",
+          infoLink: "https://demo.phlox.pro/business-2/#"
+        },
+        {
+          info: "Contact",
+          infoLink: "https://demo.phlox.pro/business-2/#"
+        },
+      ],
+      footerContacts: {
+        address: "Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX 76051",
+        email: "info@yourdomain.com",
+        phoneNumber: "+99 (0) 101 0000 888"
+      },
+      locationMap: "img/map.png"
+    }
+    // FOOTER_TOP
+    // FOOTER__________________________________
 
 
   },

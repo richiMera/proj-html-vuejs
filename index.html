@@ -24,15 +24,15 @@
           </ul>
 
           <ul class="social_icons">
-            <li v-for="socialIcon in socialIcons "><i :class="socialIcon"></i></li>
+            <li v-for="socialIcon in socialIcons "><a href="#"><i :class="socialIcon.icon"></i></a></li>
           </ul>
         </div>
         <!-- HEADER-BOTTOM-NAVBAR -->
         <div class="header_bottom">
-          <img :src="agencyLogo" alt="logo">
+          <a :href="agencyLogo.logoLink"><img :src="agencyLogo.logo" alt="logo"></a>
           <nav class="header_nav">
             <ul class="nav_list">
-              <li @click="activeLinks(index)" :class="(index == indexLinks) ? 'active_link': ''" v-for="(link, index) in navbarLinks"><a href="#">{{link}}</a></li>
+              <li @click="activeLinks(index)" :class="(index == indexLinks) ? 'active_link': ''" v-for="(link, index) in navbarLinks"><a :href="link.navLink">{{link.page}}</a></li>
             </ul>
 
           </nav>
@@ -187,6 +187,43 @@
           </div>
         </section>
       </main>
+
+      <footer>
+        <div  class="footer_top">
+          <div class="logo_footer_box footer_box">
+            <img :src="footerInformations.footerLogo" alt="">
+            <p>{{footerInformations.footerSlogan}}</p>
+          </div>
+          <div class="quick_links_box footer_box">
+            <h2>QUICK LINKS</h2>
+            <div class="design_line"><span></span></div>
+            <ul>
+              <li v-for="link in footerInformations.footerLinks">{{link.info}}</li>
+            </ul>
+          </div>
+          <div class="contacts_box footer_box">
+            <h2>CONTACTS</h2>
+            <div class="design_line"><span></span></div>
+            <ul>
+              <li v-for="contact in footerInformations.footerContacts">{{contact}}</li>
+            </ul>
+          </div>
+          <div class="location_map_box footer_box">
+            <h2>LOCATION MAP</h2>
+            <div class="design_line"><span></span></div>
+            <img :src="footerInformations.locationMap" alt="">
+          </div>
+
+        </div>
+        <div class="footer_bottom">
+          <p><i class="far fa-copyright"></i>{{copyright}} </p>
+          <ul>
+            <li v-for="socialIcon in socialIcons">
+              <a href=""><i :class="socialIcon.icon"></i> </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
 
 
