@@ -1,6 +1,6 @@
 
 .footer_top {
-  display: flex;
+  @include mYFlex;
   width: 100%;
   padding: 155px 35px 135px 0;
   .footer_box {
@@ -50,9 +50,8 @@
 }
 
 .footer_bottom {
-  display: flex;
+  @include mYFlex;
   justify-content: space-between;
-  align-items: center;
   padding: 45px 35px 48px;
   background-image: linear-gradient(285deg,#0c0c0c 0%,#474747 100%);
   color: rgba(255,255,255,.6);

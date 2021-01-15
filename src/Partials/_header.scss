@@ -9,9 +9,8 @@ header {
   box-shadow: 0 4px 0 rgba(34,34,34,.03);
 }
 .header_top {
-  display: flex;
+  @include mYFlex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: 40px;
   background-color: #3D3D3D;
@@ -38,9 +37,8 @@ header {
 }
 
 .header_bottom {
-  display: flex;
+  @include mYFlex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: 105px;
   background-color: $colorWhite;
@@ -76,7 +74,6 @@ header {
     padding-left: 15px;
   }
   .btn_and_search_container {
-    display: flex;
-    align-items: center;
+    @include mYFlex;
   }
 }

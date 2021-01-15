@@ -52,8 +52,7 @@
       left: 43%;
       top: 60%;
       transform: translate(-43%);
-      display: flex;
-      align-items: center;
+      @include mYFlex;
       width: 190px;
       height: 50px;
       line-height: 50px;
@@ -64,9 +63,8 @@
       padding: 5px;
       z-index: 2;
       li {
-        display: flex;
+        @include mYFlex;
         justify-content: center;
-        align-items: center;
         width: calc(100% / 3);
         height: 100%;
         border-radius: 55px;
@@ -85,9 +83,8 @@
 }
 
 .why_we_are_here {
-  display: flex;
+  @include mYFlex;
   justify-content: center;
-  align-items: center;
   width: 100%;
   height: 1150px;
   background-color: $colorWhite;
@@ -147,8 +144,7 @@
 }
 
 .learn_more {
-  display: flex;
-  align-items: center;
+  @include mYFlex;
   width: 100%;
   height: 1100px;
   padding-top: 200px;
@@ -246,9 +242,8 @@
 }
 
 .recent_project {
-  display: flex;
+  @include mYFlex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   height: 1745px;
   .recent_project_content_container {
@@ -357,9 +352,8 @@
     object-fit: cover;
   }
   .smoked_bacon_hoverlay {
-    display: flex;
+    @include mYFlex;
     flex-direction: column;
-    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -401,9 +395,8 @@
 }
 
 .our_blog {
-  display: flex;
+  @include mYFlex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   // height: 1180px;
   padding-top: 245px;
@@ -457,8 +450,7 @@
             }
           }
           h4 {
-            display: flex;
-            align-items: center;
+            @include mYFlex;
             font-size: 20px;
           }
           h4::before {
@@ -505,9 +497,8 @@
     display: flex;
     width: 100%;
     .last_box {
-      display: flex;
+      @include mYFlex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
       width: 50%;
       height: 340px;
@@ -527,9 +518,8 @@
     .black_box {
       background-image: linear-gradient(301deg,#0c0c0c 0%,#474747 100%);
       .input_box {
-        display: flex;
+        @include mYFlex;
         justify-content: space-between;
-        align-items: center;
         width: 70%;
         height: 60px;
         padding-left: 50px;
@@ -558,12 +548,11 @@
   }
   .sponsor_list_container {
     width: 100%;
-  padding-top: 125px;
+    padding-top: 125px;
     background-color: $colorLightGray;
     ul {
-      display: flex;
+      @include mYFlex;
       justify-content: center;
-      align-items: center;
       width: 100%;
       list-style: none;
       padding-bottom: 125px;

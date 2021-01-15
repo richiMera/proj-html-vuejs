@@ -133,8 +133,8 @@ header {
 
 .header_top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 40px;
   background-color: #3D3D3D;
@@ -170,8 +170,8 @@ header {
 
 .header_bottom {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 105px;
   background-color: white;
@@ -281,8 +281,8 @@ header {
 }
 .slider .content_slider .chooser_list li {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: calc(100% / 3);
   height: 100%;
   border-radius: 55px;
@@ -298,8 +298,8 @@ header {
 
 .why_we_are_here {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 1150px;
   background-color: white;
@@ -456,8 +456,8 @@ header {
 
 .recent_project {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   height: 1745px;
 }
@@ -569,8 +569,8 @@ header {
 }
 .smoked_bacon .smoked_bacon_hoverlay {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
@@ -612,8 +612,8 @@ header {
 
 .our_blog {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   padding-top: 245px;
 }
@@ -712,8 +712,8 @@ header {
 }
 .last_main_container .black_green_container .last_box {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   width: 50%;
   height: 340px;
@@ -735,8 +735,8 @@ header {
 }
 .last_main_container .black_green_container .black_box .input_box {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 70%;
   height: 60px;
   padding-left: 50px;
@@ -768,8 +768,8 @@ header {
 }
 .last_main_container .sponsor_list_container ul {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   list-style: none;
   padding-bottom: 125px;
@@ -784,6 +784,7 @@ header {
 
 .footer_top {
   display: flex;
+  align-items: center;
   width: 100%;
   padding: 155px 35px 135px 0;
 }
@@ -826,8 +827,8 @@ header {
 
 .footer_bottom {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 45px 35px 48px;
   background-image: linear-gradient(285deg, #0c0c0c 0%, #474747 100%);
   color: rgba(255, 255, 255, 0.6);
