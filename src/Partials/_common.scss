@@ -91,3 +91,10 @@ body {
   background: linear-gradient(to right, rgb(124,252,0,0.6), $colorGreen);
   font-weight: 700;
 }
+
+.visible {
+  display: inline-block;
+}
+.hidden {
+  display: none;
+}

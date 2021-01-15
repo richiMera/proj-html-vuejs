@@ -56,7 +56,7 @@
             <p>{{slider[indexImages].paragraph}}</p>
             <a href="" class="my_btn_black">READ MORE</a>
             <ul class="slider_social_list">
-              <li v-for="socialLink in socialLinks"><a href="#">{{socialLink}} <span>-</span></a></li>
+              <li v-for="(socialLink,index) in socialLinks"><a href="#">{{socialLink}} <span>-</span></a></li>
             </ul>
             <ul class="chooser_list">
               <li :class="(index == indexImages) ? 'active_image': ''" @click="chooseImage(index)" v-for="(chooseImageNumber, index) in chooseImageNumbers">{{chooseImageNumber}}</li>
@@ -227,7 +227,7 @@
             </ul>
           </div>
           <div class="location_map_box footer_box">
-            <h2>LOCATION MAP</h2>
+            <h2>LOCATION ON MAP</h2>
             <div class="design_line"><span></span></div>
             <img :src="footerInformations.locationMap" alt="">
           </div>

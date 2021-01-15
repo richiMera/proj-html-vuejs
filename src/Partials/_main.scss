@@ -38,7 +38,13 @@
           text-decoration: none;
           color: black;
           font-weight: 700;
+          span {
+            margin: 0 2px;
+          }
         }
+      }
+      li:last-child span {
+        display: none;
       }
     }
     .chooser_list {

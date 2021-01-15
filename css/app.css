@@ -114,6 +114,14 @@ body {
   font-weight: 700;
 }
 
+.visible {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -247,6 +255,12 @@ header {
   text-decoration: none;
   color: black;
   font-weight: 700;
+}
+.slider .content_slider ul li a span {
+  margin: 0 2px;
+}
+.slider .content_slider ul li:last-child span {
+  display: none;
 }
 .slider .content_slider .chooser_list {
   position: absolute;
